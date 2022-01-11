@@ -1,101 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #e7d8d8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #e7d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .wrapper {
-    width: 550px;
-    background-color: #ffffff;
+  width: 550px;
+  background-color: #ffffff;
 }
 
-.gray {
-    color: #918e9b;
+nav {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-
-/* Nav section */
-
-nav {
-    height: 70px;
-    display: flex;
-    padding: 20px 36px;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+.gray {
+  color: #918e9b;
 }
 
-nav > img {
-    max-width: 100px;
+.nav--logo {
+  max-width: 100px;
 }
 
-
-/* Hero section */
+section {
+  padding: 20px;
+}
 
 .hero {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.hero > img {
-    max-width: 400px;
-    align-self: center;
+.hero--photo {
+  max-width: 400px;
+  align-self: center;
 }
 
-.hero > h1 {
-    width: 347px;
-    height: 40px;
-    left: 36px;
-    top: 360px;
-    margin-bottom: 10px;
-
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 110%;
+.hero--header {
+  margin-bottom: 16px;
 }
 
-.hero > p {
-    width: 320px;
-    height: 56px;
-    left: 36px;
-    top: 416px;
-
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 110%;
+.hero--text {
+  margin-top: 0;
 }
 
-
-/* Card section */
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
 
 .card {
-    width: 175px;
-    font-size: 12px;
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .card--image {
-    width: 100%;
-    border-radius: 9px;
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card--stats {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .card--star {
-    height: 14px;
+  height: 14px;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  background-color: white;
+  padding: 3px 5px;
+  border-radius: 2px;
+  font-weight: bold;
 }
